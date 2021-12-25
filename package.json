@@ -1,6 +1,24 @@
 {
-  "name": "to-notion-client",
-  "private": true,
+  "name": "next-boilerplate",
+  "description": "🚀 A minimal jump-start boilerplate based on Next + Redux for building super-performant websites",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hcorta/next-boilerplate"
+  },
+  "keywords": [
+    "boilerplate",
+    "electron",
+    "react",
+    "webpack"
+  ],
+  "homepage": "https://github.com/hcorta/next-boilerplate",
+  "author": {
+    "name": "Hugo Corta",
+    "email": "corta.hugo@gmail.com",
+    "url": "https://github.com/hcorta"
+  },
   "scripts": {
     "start": "next start",
     "dev": "next dev",
