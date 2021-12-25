@@ -10,9 +10,7 @@
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "test:ci": "jest --runInBand",
-    "postinstall": "husky install",
-    "prepare": "husky install",
+    "test:ci": "jest --runInBand"
   },
   "dependencies": {
     "cross-env": "^5.2.1",
