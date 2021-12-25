@@ -1,0 +1,11 @@
+{
+  "name": "React Next Boilerplate",
+  "short_name": "next-boilerplate",
+  "icons": [
+    {
+      "src": "vercel.svg",
+      "type": "image/png"
+    }
+  ],
+  "display": "fullscreen"
+}
