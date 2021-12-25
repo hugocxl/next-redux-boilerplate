@@ -18,7 +18,7 @@
 ## Features
 
 - 🔥 **SSR** – [Next.js](https://nextjs.org) for Static Site Generator
-- ⚛️ **State Management** – Redux https://github.com/alexnm/re-ducks
+- ⚛️ **State Management** – Redux
 - ⌛️ **Async Logic** – Thunks
 - 🗳 **Persisting State** – Redux Persist
 - ⚙️ **Bundle Analyzer** – [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
@@ -33,8 +33,6 @@
 - [Contributing](#Contributing)
 - [Code of Conduct](#code-of-conduct)
 - [License](#License)
-
-
 
 ## Overview
 
@@ -77,6 +75,11 @@ The basic structure of the project is provided in the following way. No configur
 └── tsconfig.json            # TypeScript configuration
 ```
 
+### Redux
+
+The architecture for the redux module is inspired in [this proposal](https://github.com/alexnm/re-ducks) by [Alex Moldovan](https://github.com/alexnm)
+where he revisits the [original ducks modular approach proposal](https://github.com/erikras/ducks-modular-redux).
+
 ## Commands
 
 - `dev`: runs your application on `localhost:3000`
@@ -98,10 +101,10 @@ No one’s perfect. If you’ve found any errors, want to suggest enhancements, 
 
 ## License
 
-**@hcorta/next-boilerplate** is open source software licensed as MIT ©[hcorta](https://github.com/hcorta).
+**@hcorta/next-boilerplate** is open source software licensed as MIT.
 
 ---
 
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
-
-[![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://www.buymeacoffee.com/ixartz)
+Made with ♥ by [@hcorta](https://hugocorta.com)
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40hcorta)](https://twitter.com/hcorta)
+[![Sponsor Next JS Boilerplate](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/hcorta)
