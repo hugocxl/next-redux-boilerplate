@@ -1,4 +1,4 @@
-# react-echarts
+# next-boilerplate
 
 ![Next boilerplate](public/cover.png)
 
@@ -9,7 +9,7 @@
 [![Dependencies Status](https://img.shields.io/npm/v/next?color=mediumorchid&label=next&style=flat-square)](https://github.com/apache/incubator-echarts)
 [![Dependencies Status](https://img.shields.io/npm/v/redux-thunk?color=mediumorchid&label=redux-thunk&style=flat-square)](https://github.com/apache/incubator-echarts)
 
-🚀 A minimal jump-start boilerplate based on **Next** + **Redux** for building super-performant websites.
+🚀 A minimal jump-start boilerplate based on **Next** + **Redux** for building super-performant **SSR React** websites.
 
 </div>
 
@@ -17,12 +17,13 @@
 
 ## Features
 
-- 🔥 **SSR** – [Next.js](https://nextjs.org) for Static Site Generator
-- ⚛️ **State Management** – Redux
-- ⌛️ **Async Logic** – Thunks
-- 🗳 **Persisting State** – Redux Persist
+- 🔥 **SSR** – [Next.js](https://nextjs.org) for Static Site Generator.
+- ⚛️ **State Management** – Redux for managing and centralizing application state.
+- ⌛️ **Async Logic** – Thunks for asynchronous logic that interacts with the Redux store
+- 🗳 **Persisting State** – Redux Persist for persist and rehydrate the Redux store
+- � **Integrated testing** – Redux Persist for persist and rehydrate the Redux 
 - ⚙️ **Bundle Analyzer** – [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- 🎨 **Styles** – Unopinied
+- 🎨 **Styles** – Unopinionated! Why? 👉 Read this
 
 ## Table of Contents
 
