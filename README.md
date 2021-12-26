@@ -11,22 +11,22 @@
 
 </div>
 
+### Features
+
+- 🔥 **SSR** – [Next](https://nextjs.org) for Static Site Generator.
+- ⚛️ **State Management** – [Redux](https://react-redux.js.org) for managing and centralizing application state.
+- ⌛️ **Async Logic** – [Thunks](https://github.com/reduxjs/redux-thunk) for asynchronous logic that interacts with the Redux store
+- 🗳 **Persisting State** – [Redux Persist](https://github.com/rt2zz/redux-persist) for persist and rehydrate the Redux store
+- � **Integrated testing** – [Jest](https://jestjs.io/) for creating, running, and structuring tests.
+- ⚙️ **Bundle Analyzer** – [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) for anaylizing builds.
+- 🎨 **Styles** – Unopinionated! Why? 👉 [Read this](#Styles)
+
 ---
-
-## Features
-
-- 🔥 **SSR** – [Next.js](https://nextjs.org) for Static Site Generator.
-- ⚛️ **State Management** – Redux for managing and centralizing application state.
-- ⌛️ **Async Logic** – Thunks for asynchronous logic that interacts with the Redux store
-- 🗳 **Persisting State** – Redux Persist for persist and rehydrate the Redux store
-- � **Integrated testing** – Redux Persist for persist and rehydrate the Redux 
-- ⚙️ **Bundle Analyzer** – [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- 🎨 **Styles** – Unopinionated! Why? 👉 Read this
 
 ## Table of Contents
 
+- [Overview](#Overview)
 - [Installation](#Installation)
-- [Introducction](#Introducction)
 - [Usage](#Usage)
 - [Props](#Props)
 - [Contributing](#Contributing)
@@ -53,33 +53,47 @@ yarn
 
 ...and, you're ready to go!
 
-## Project structure
+## Usage
+
+### Project structure
 
 The basic structure of the project is provided in the following way. No configuration needed, just the files you need to build your app.
 
 ```bash
 .
 ├── README.md                # README file
+├── .babelrc           # Jest JS configuration
+├── .eslintignore           # Jest JS configuration
+├── .gitignore           # Jest JS configuration
+├── .prettierignore           # Jest JS configuration
+├── .prettierrc          # Jest JS configuration
+├── jest.config.js           # Jest JS configuration
 ├── next.config.js           # Next JS configuration
 ├── public                   # Public folder
-│   └── assets
-│       └── images           # Image used by default template
-├── src
-│   ├── layout               # Atomic layout components
-│   ├── pages                # Next JS pages
-│   ├── styles               # PostCSS style folder with Tailwind
-│   ├── templates            # Default template
-│   └── utils                # Utility folder
-├── tailwind.config.js       # Tailwind CSS configuration
-└── tsconfig.json            # TypeScript configuration
+│   ├── manifest.json        # Your manifest.json
+│   └── favicon.ico          # Change this
+└── src
+    ├── components           # Components for the app
+    ├── constants            # Global constants
+    ├── helpers              # Reused logic across the app
+    ├── hooks                # State logic for components
+    ├── HOCs                 # Wrapped logic for components
+    ├── pages                # Next JS pages
+    └── styles               # Global CSS files
 ```
 
-### Redux
+### Redux Architecture
 
-The architecture for the redux module is inspired in [this proposal](https://github.com/alexnm/re-ducks) by [Alex Moldovan](https://github.com/alexnm)
+The architecture for the redux management is inspired in [this proposal](https://github.com/alexnm/re-ducks) by [Alex Moldovan](https://github.com/alexnm)
 where he revisits the [original ducks modular approach proposal](https://github.com/erikras/ducks-modular-redux).
 
-## Commands
+### Styles
+
+No custom solution for styling has been included in this boilerplate. The reason is simple: there is wide range of options (SASS, Tailwinds, JSS, Emotion, etc) for styling React apps nowadays, and it is difficult to choose one that fits in every pocket.
+
+Since everyone has her personal preference, I have decided not to include any option and leave that decision to be taken by the dev.
+
+### Commands
 
 - `dev`: runs your application on `localhost:3000`
 - `build`: creates the production build version
@@ -87,8 +101,6 @@ where he revisits the [original ducks modular approach proposal](https://github.
 - `lint`: runs the linter in all components and pages
 - `test`: runs jest to test all components and pages
 - `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
 
 ## Contributing
 
@@ -104,6 +116,7 @@ No one’s perfect. If you’ve found any errors, want to suggest enhancements, 
 
 ---
 
-Made with ♥ by [@hcorta](https://hugocorta.com)
+**Made with ♥ by [@hcorta](https://hugocorta.com)**
+
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40hcorta)](https://twitter.com/hcorta)
 [![Sponsor Next JS Boilerplate](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/hcorta)
