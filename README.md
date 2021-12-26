@@ -11,7 +11,9 @@
 
 </div>
 
-### Features
+---
+
+## Features
 
 - 🔥 **SSR** – [Next](https://nextjs.org) for Static Site Generator.
 - ⚛️ **State Management** – [Redux](https://react-redux.js.org) for managing and centralizing application state.
@@ -19,39 +21,39 @@
 - 🗳 **Persisting State** – [Redux Persist](https://github.com/rt2zz/redux-persist) for persist and rehydrate the Redux store
 - � **Integrated testing** – [Jest](https://jestjs.io/) for creating, running, and structuring tests.
 - ⚙️ **Bundle Analyzer** – [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) for anaylizing builds.
-- 🎨 **Styles** – Unopinionated! Why? 👉 [Read this](#Styles)
+- 🎨 **Styles/Components lib** – Unopinionated! Why? 👉 [Read this](#Styles)
 
 ---
 
 ## Table of Contents
 
-- [Overview](#Overview)
+- [Motivation](#Motivation)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Props](#Props)
 - [Contributing](#Contributing)
 - [Code of Conduct](#code-of-conduct)
 - [License](#License)
 
-## Overview
+## Motivation
 
-Modern web development technologies have evolved incredibly fast in the last few years in such a way that we can now create cross-platform desktop apps using resources originally thought for web browsers.
+**Redux** is one of the de facto library for managing large single-state React applications.
+Setting up Redux for static apps is rather simple: a single Redux store has to be created and provided to all pages. When Next.js static site generator or server side rendering is involved, however, things start to get complicated.
 
-Nevertheless, this usually require a lot of setup to make things work: Webpack to bundle your code, Babel for transpiling, Eslint for linting... Not to mention that when creating Electron applications, all of that setup just becomes more difficult.
+This is where this boilerplate comes in handy, bringing Next.js and Redux together.
 
-The primary aim of rew-electron-boilerplate is to eliminate all preliminary setup with one simple install so you can focus in developing your application.
+The primary aim of this project is to eliminate all preliminary setup with one simple install so you can focus in developing your application.
+
+> Please, note that this template is intended for **building medium-large applications with complex state management**. If that is not your case, you'll probably be OK with some of the [examples provided by the Next.js team.](https://github.com/vercel/next.js/tree/canary/examples)
 
 ## Installation
 
-Create a repo in your profile via the "Use this template" option.
+1. Create a repo in your profile via the "Use this template" option.
 
-Install dependencies:
+2. Install dependencies
 
 ```bash
 yarn
 ```
-
-...and, you're ready to go!
 
 ## Usage
 
@@ -62,16 +64,16 @@ The basic structure of the project is provided in the following way. No configur
 ```bash
 .
 ├── README.md                # README file
-├── .babelrc           # Jest JS configuration
-├── .eslintignore           # Jest JS configuration
-├── .gitignore           # Jest JS configuration
-├── .prettierignore           # Jest JS configuration
-├── .prettierrc          # Jest JS configuration
-├── jest.config.js           # Jest JS configuration
-├── next.config.js           # Next JS configuration
+├── .babelrc                 # Babel configuration
+├── .eslintignore            # Eslint ignore config
+├── .gitignore               # Git ignore config
+├── .prettierignore          # Prettier ignore config
+├── .prettierrc              # Prettier configuration
+├── jest.config.js           # Jest configuration
+├── next.config.js           # Next configuration
 ├── public                   # Public folder
-│   ├── manifest.json        # Your manifest.json
-│   └── favicon.ico          # Change this
+│   ├── manifest.json        
+│   └── favicon.ico          
 └── src
     ├── components           # Components for the app
     ├── constants            # Global constants
@@ -84,14 +86,34 @@ The basic structure of the project is provided in the following way. No configur
 
 ### Redux Architecture
 
-The architecture for the redux management is inspired in [this proposal](https://github.com/alexnm/re-ducks) by [Alex Moldovan](https://github.com/alexnm)
+This architecture for the redux management is inspired in [this proposal](https://github.com/alexnm/re-ducks) by [Alex Moldovan](https://github.com/alexnm)
 where he revisits the [original ducks modular approach proposal](https://github.com/erikras/ducks-modular-redux).
+
+Basically, the inital single-duck-file approach might become hard to maintain and read when buidling medium-large scale codebases. To solve this issues, we use duck folders, instead of duck files. 
+
+Here's how a **duck** folder would look like:
+
+```bash
+duck/
+├── actions.js
+├── index.js
+├── operations.js
+├── reducers.js
+├── selectors.js
+├── tests.js
+├── types.js
+├── utils.js
+```
+
+NOTE: Each concept/module from your app will have a similar folder.
+
+> If you are interested in knowing more about the reasons behind this organization, you may [read this article](https://betterprogramming.pub/scaling-your-redux-app-with-ducks-6115955638be#.4ppptx7oq).
 
 ### Styles
 
 No custom solution for styling has been included in this boilerplate. The reason is simple: there is wide range of options (SASS, Tailwinds, JSS, Emotion, etc) for styling React apps nowadays, and it is difficult to choose one that fits in every pocket.
 
-Since everyone has her personal preference, I have decided not to include any option and leave that decision to be taken by the dev.
+_Since everyone has her personal preference, I have decided not to include any option and leave that decision to be taken by the dev._
 
 ### Commands
 
