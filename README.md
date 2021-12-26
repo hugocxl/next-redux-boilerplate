@@ -1,5 +1,3 @@
-# next-boilerplate
-
 ![Next boilerplate](public/cover.png)
 
 <div align="center">
