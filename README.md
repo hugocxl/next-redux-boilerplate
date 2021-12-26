@@ -1,13 +1,13 @@
 # react-echarts
 
-<!-- ![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg) -->
+![Next boilerplate](public/cover.png)
 
 <div align="center">
 
-[![Version](https://img.shields.io/npm/v/@hcorta/react-echarts.svg?style=flat-square&logo=appveyor)](https://www.npmjs.com/package/@hcorta/react-echarts)
-[![Size](https://img.shields.io/bundlephobia/minzip/@hcorta/react-echarts?style=flat-square)](https://bundlephobia.com/result?p=@hcorta/react-echarts)
-[![NPM](https://img.shields.io/npm/dm/@hcorta/react-echarts.svg?style=flat-square&logo=appveyor)](https://www.npmjs.com/package/@hcorta/react-echarts)
-[![Dependencies Status](https://img.shields.io/npm/v/echarts?color=mediumorchid&label=echarts&style=flat-square)](https://github.com/apache/incubator-echarts)
+[![Dependencies Status](https://img.shields.io/npm/v/echarts?color=mediumorchid&label=react&style=flat-square)](https://github.com/apache/incubator-echarts)
+[![Dependencies Status](https://img.shields.io/npm/v/react-redux?color=mediumorchid&label=react-redux&style=flat-square)](https://github.com/apache/incubator-echarts)
+[![Dependencies Status](https://img.shields.io/npm/v/next?color=mediumorchid&label=next&style=flat-square)](https://github.com/apache/incubator-echarts)
+[![Dependencies Status](https://img.shields.io/npm/v/redux-thunk?color=mediumorchid&label=redux-thunk&style=flat-square)](https://github.com/apache/incubator-echarts)
 
 🚀 A minimal jump-start boilerplate based on **Next** + **Redux** for building super-performant websites.
 
