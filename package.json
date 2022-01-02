@@ -1,6 +1,6 @@
 {
   "name": "next-boilerplate",
-  "description": "🚀 A minimal jump-start boilerplate based on Next + Redux for building super-performant websites",
+  "description": "🚀 Opinionated Next.js+Redux project boilerplate for building super-performant SSR React websites.",
   "private": false,
   "license": "MIT",
   "repository": {
