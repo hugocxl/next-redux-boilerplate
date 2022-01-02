@@ -7,8 +7,8 @@
 [![Dependencies Status](https://img.shields.io/npm/v/next?color=mediumorchid&label=next&style=flat-square)](https://github.com/apache/incubator-echarts)
 [![Dependencies Status](https://img.shields.io/npm/v/redux-thunk?color=mediumorchid&label=redux-thunk&style=flat-square)](https://github.com/apache/incubator-echarts)
 
-🚀 A minimal jump-start boilerplate based on **Next** + **Redux** for building super-performant **SSR React** websites.
-
+🚀 Opinionated Next.js+Redux project boilerplate for building super-performant SSR React websites.
+    
 </div>
 
 ---
